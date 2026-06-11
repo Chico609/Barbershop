@@ -98,7 +98,7 @@ export default function IndexPage({ navigate }: IndexPageProps) {
         </div>
 
         {/* Features */}
-        <div className="container" style={{ marginTop: 60, maxWidth: 1200 }}>
+        <div className="container">
           <div className="hero-features">
             <div className="feature-item">
               <div className="feature-icon">📅</div>
