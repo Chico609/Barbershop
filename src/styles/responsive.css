@@ -2,9 +2,10 @@
    RESPONSIVE DESIGN - Mobile First Approach
    Breakpoints:
    - Mobile: < 480px
-   - Tablet: 480px - 768px
-   - Desktop: 768px - 1024px
-   - Large Desktop: > 1024px
+   - Tablet Small: 480px - 768px
+   - Tablet Medium: 769px - 1024px
+   - Desktop: 1025px - 1439px
+   - Desktop Large: ≥ 1440px
    ============================================================ */
 
 /* ============================================================
@@ -83,7 +84,6 @@
   .btn {
     padding: 9px 16px;
     font-size: 0.85rem;
-    width: 100%;
   }
 
   .btn-lg {
@@ -248,6 +248,10 @@
     flex-direction: column;
   }
 
+
+  .hero-actions .btn {
+    width: 100%;
+  }
   .hero-visual {
     display: none;
   }
@@ -265,7 +269,7 @@
   }
 
   .filters-bar .btn {
-    width: 100%;
+    width: auto;
   }
 
   /* Inline Forms */
