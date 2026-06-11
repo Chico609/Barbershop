@@ -8,16 +8,16 @@
 -- Deletar em ordem de dependência (da última para a primeira)
 
 -- 1. Limpar tabela de relacionamento N:N
-TRUNCATE TABLE IF EXISTS tb_servico_has_tb_agendamento CASCADE;
+TRUNCATE TABLE tb_servico_has_tb_agendamento CASCADE;
 
 -- 2. Limpar tabelas que possuem foreign keys
-TRUNCATE TABLE IF EXISTS tb_agendamento CASCADE;
-TRUNCATE TABLE IF EXISTS tb_barbeiro_indisponibilidade CASCADE;
+TRUNCATE TABLE tb_agendamento CASCADE;
+TRUNCATE TABLE tb_barbeiro_indisponibilidade CASCADE;
 
 -- 3. Limpar tabelas principais
-TRUNCATE TABLE IF EXISTS tb_usuario CASCADE;
-TRUNCATE TABLE IF EXISTS tb_barbeiro CASCADE;
-TRUNCATE TABLE IF EXISTS tb_servico CASCADE;
+TRUNCATE TABLE tb_usuario CASCADE;
+TRUNCATE TABLE tb_barbeiro CASCADE;
+TRUNCATE TABLE tb_servico CASCADE;
 
 -- 4. Resetar sequences (auto_increment) para começar do 1
 ALTER SEQUENCE tb_usuario_id_usuario_seq RESTART WITH 1;
