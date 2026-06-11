@@ -119,15 +119,28 @@
     width: 100%;
   }
 
-  /* Auth */
-  .auth-page {
-    padding: 16px;
+  /* Hero features - 1 coluna */
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 30px;
   }
 
-  .auth-card {
-    padding: 18px;
+  .feature-item {
+    padding: 20px 16px;
   }
-}
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+
+  .feature-desc {
+    font-size: 0.85rem;
+  }
 
 /* ============================================================
    TABLET PEQUENO (480px - 768px)
@@ -213,6 +226,25 @@
     width: 100%;
   }
 
+  /* Hero features - 2 colunas */
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 40px;
+  }
+
+  .feature-item {
+    padding: 22px 18px;
+  }
+
+  .feature-icon {
+    font-size: 2.2rem;
+  }
+
+  .feature-title {
+    font-size: 1.05rem;
+  }
+
   .auth-card {
     padding: 24px;
   }
@@ -221,7 +253,6 @@
 /* ============================================================
    TABLET MÉDIO (769px - 1024px)
    ============================================================ */
-@media (min-width: 769px) and (max-width: 1024px) {
   body {
     font-size: 15px;
   }
@@ -250,6 +281,29 @@
 
   .page-title {
     font-size: 1.9rem;
+  }
+
+  /* Hero features - 2 colunas */
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 45px;
+  }
+
+  .feature-item {
+    padding: 24px 20px;
+  }
+
+  .feature-icon {
+    font-size: 2.4rem;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+
+  .feature-desc {
+    font-size: 0.9rem;
   }
 
   /* Grids - 2-3 colunas */
@@ -331,6 +385,29 @@
     font-size: 2rem;
   }
 
+  /* Hero features - 3 colunas */
+  .hero-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+  }
+
+  .feature-item {
+    padding: 28px 24px;
+  }
+
+  .feature-icon {
+    font-size: 2.8rem;
+  }
+
+  .feature-title {
+    font-size: 1.15rem;
+  }
+
+  .feature-desc {
+    font-size: 0.95rem;
+  }
+
   /* Grids - 3+ colunas */
   .metrics-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -403,6 +480,29 @@
 
   .form-row.four {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Hero features - 3 colunas otimizadas */
+  .hero-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+  }
+
+  .feature-item {
+    padding: 32px 28px;
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+  }
+
+  .feature-title {
+    font-size: 1.25rem;
+  }
+
+  .feature-desc {
+    font-size: 1rem;
   }
 }
 
